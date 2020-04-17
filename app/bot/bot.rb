@@ -2,7 +2,7 @@ require 'facebook/messenger'
 
 include Facebook::Messenger
 
-Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["ACCESS_TOKEN"])
+FAcebook::Messenger::Subscriptions.subscribe(access_token: ENV["Access_token"])
 
 Bot.on :message do |message|
     if message.text.include? "Bonjour"
